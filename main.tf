@@ -6,7 +6,7 @@ module "terraform-seqera-module" {
   vpc_name = "seqera-vpc"
 
   ## EKS Cluster Configurations
-  create_eks_cluster = true
+  create_eks_cluster = false
   cluster_name    = "seqera-terraform-aws"
   cluster_version = "1.27"
 
@@ -15,9 +15,6 @@ module "terraform-seqera-module" {
 
   create_redis_cluster = false
   create_db_cluster = false
-
-  create_seqera_service_account = true
-  enable_aws_ebs_csi_driver = true
   
 
   default_tags = {
