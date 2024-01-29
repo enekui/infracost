@@ -1,6 +1,5 @@
 module "terraform-seqera-module" {
-  # source  = "github.com/seqeralabs/terraform-seqera-module"
-  source = "/Users/adianny/seqera/git/terraform-seqera-module"
+  source  = "github.com/seqeralabs/terraform-seqera-module"
   region  = "us-west-2"
 
   ## VPC
